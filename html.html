@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <div class="header">
+            <div class="header-logo">
+                <ion-icon name="logo-apple"></ion-icon>
+                <h1>AirPods</h1>
+            </div>
+            <div class="header-a">
+                <a href="#">Главная</a>
+                <a href="#">Преимущества</a>
+                <a href="#">Характеристики</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="header-tel">
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+996 505852365">+996 505852365</a>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="hero">
+    <div class="container">
+        <div class="hero">
+            <div>
+                <div class="hero-block">
+                    <div class="hero-line">
+                    </div>
+                    <div class="hero-title">
+                        <h1>Airpods Pro</h1>
+                        <p>Наушники нового поколение.
+                            Для исключительного комфорта</p>
+                    </div>
+                </div>
+                <button>Модели</button>
+                <div class="hero-view">
+                    <div class="hero-circle">
+                        <div>
+                            <div>
+                                <ion-icon name="play"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Watch video</p>
+                </div>
+            </div>
+            <img src="./img/air.png" alt="">
+        </div>
+    </div>
+</section>
+
+
+<section id="model">
+    <div class="container">
+        <div class="model">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="model-block">
+                                <img src="./img/img2.png" alt="">
+                                <button>Подробнее</button>
+                                <div>
+                                    <div class="hero-line"></div>
+                                    <p>AirPods Pro  уникальные наушники с технологией активного шумоподавления, которые непрерывно оптимизируют звучание с учётом формы вашего уха и положения ...</p>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="model-block">
+                                <img src="./img/img2.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="model-block">
+                                <img src="./img/img2.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="model-block">
+                                <img src="./img/img2.png" alt="">
+                            </div>
+
+                        </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
